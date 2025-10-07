@@ -1,9 +1,4 @@
 {
-    "label": {
-        "prefix": "label",
-        "body": "<label htmlFor=\"$1\">$2</label>$3",
-        "description": "JSX/TSX - label with htmlFor"
-    },
     "destructuring of props": {
         "prefix": "dp",
         "body": ["const { ${1:name} } = this.props"]
