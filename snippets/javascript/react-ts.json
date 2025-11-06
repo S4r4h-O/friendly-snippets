@@ -124,6 +124,12 @@
         ],
         "description": "React useMemo() hook"
     },
+    "useAction": {
+        "prefix": "uas",
+        "body": "const [data, action] = useActionState(${1:initValue})",
+        "description": "React useActionState hook"
+    },
+
     "createReactHook": {
         "prefix": "crh",
         "body": ["export const use$0 = () => {", "", "}"],
