@@ -1,4 +1,8 @@
 {
+    "reactComment": {
+        "prefix": "cmmt",
+        "body": ["{/* ${1: comment} */}"]
+    },
     "destructuring of props": {
         "prefix": "dp",
         "body": ["const { ${1:name} } = this.props"]
@@ -33,13 +37,21 @@
     },
     "reactFunctionComponent": {
         "prefix": "rfc",
-        "body": "\nconst ${TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\nexport default ${TM_FILENAME_BASE}",
-        "description": "Creates a React function component without PropTypes"
+        "body": "\nexport default function ${name}(${2:arguments}) {\n\t${0}\n}"
     },
-    "reactFunctionComponentWithCustomName": {
-        "prefix": "rfcn",
+    "reactAsyncFunctionComponent": {
+        "prefix": "rafc",
+        "body": "\nexport default async function ${name}(${2:arguments}) {\n\t${0}\n}"
+    },
+    "reactArrowFunctionComponent": {
+        "prefix": "rfac",
+        "body": "\nconst ${TM_FILENAME_BASE} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\nexport default ${TM_FILENAME_BASE}",
+        "description": "Creates a React arrow function component without PropTypes"
+    },
+    "reactArrowFunctionComponentWithCustomName": {
+        "prefix": "rafcn",
         "body": "\nconst ${1:functionname} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\nexport default ${1:functionname}",
-        "description": "Creates a React function component with custom name"
+        "description": "Creates a React arrow function component with custom name"
     },
     "reactFunctionComponentWithEmotion": {
         "prefix": "rfce",

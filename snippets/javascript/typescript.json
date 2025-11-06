@@ -197,6 +197,10 @@
         "body": ["const ${1:name} = new ${2:type}(${3:arguments});$0"],
         "description": "New Statement"
     },
+    "reactComment": {
+        "prefix": "cmmt",
+        "body": ["{/* ${1: comment} */}"]
+    },
     "Switch Statement": {
         "prefix": "switch",
         "body": [
